@@ -1,0 +1,14 @@
+CREARE DATABASE My Shop
+CREATE TABLE customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(100) NOT NULL,
+    ContactName VARCHAR(100),
+    Address VARCHAR(100),
+    City VARCHAR(50),
+    PostalCode VARCHAR(20)
+);
+INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode)
+VALUES 
+    (1, 'Alfreds Futterkiste', 'Maria Anders', 'Obere Str. 57', 'Berlin', '12209'),
+    (2, 'Ana Trujillo Emparedados y helados', 'Ana Trujillo', 'Avda. de la Constitución 2222', 'México D.F.', '05021'),
+    (3, 'Antonio Moreno Taquería', 'Antonio Moreno', 'Mataderos 2312', 'México D.F.', '05023');
